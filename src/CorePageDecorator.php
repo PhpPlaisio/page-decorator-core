@@ -51,9 +51,8 @@ class CorePageDecorator extends PlaisioObject implements PageDecorator
     
     $this->nub->assets->jsAdmSetPageSpecificMain(__CLASS__);
 
-    $this->nub->assets->setPageTitle($this->nub->pageInfo['ptb_title'].
-                                     ' - '.
-                                     $this->nub->assets->getPageTitle());
+    $this->nub->assets->setPageTitle($this->nub->pageInfo['ptb_title']);
+    $this->nub->assets->appendPageTitle($this->nub->pageInfo['pag_title']);
   }
 
   //--------------------------------------------------------------------------------------------------------------------
