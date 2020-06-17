@@ -4,8 +4,8 @@
   {
     display:               grid;
     grid-template-columns: max-content 1fr;
-    grid-template-areas:   "header    header header"
-                           "info1     info2  info2"
-                           "main-menu main   main";
+    grid-template-areas:   "header     header header"
+                           "info1      info2  info2"
+                           "admin-menu main   main";
   }
 }

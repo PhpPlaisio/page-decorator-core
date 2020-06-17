@@ -43,7 +43,7 @@
   color: #FFFFFF;
 }
 
-.grid-main-menu
+.grid-admin-menu
 {
-  grid-area: main-menu;
+  grid-area: admin-menu;
 }

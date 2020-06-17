@@ -4,7 +4,7 @@
   {
     display:               grid;
     grid-template-columns: max-content 1fr;
-    grid-template-areas:   "header header main-menu"
+    grid-template-areas:   "header header admin-menu"
                            "info1  info2  info2"
                            "main   main   main";
   }

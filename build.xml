@@ -1,8 +1,10 @@
 <project name="PhpPlaisio: Core Menu" default="build" basedir=".">
+    <taskdef name="Sprite" classname="vendor.plaisio.phing-extensions.src.SpriteTask"/>
     <!-- Run composer update and executes various other updates -->
     <target name="update">
         <exec command="composer update" checkreturn="true" passthru="true"/>
         <phing phingfile="build.xml" target="kernel" haltonfailure="true"/>
+        <phing phingfile="build.xml" target="sprite" haltonfailure="true"/>
     </target>
 
     <target name="kernel">
@@ -10,6 +12,17 @@
             <arg value="--ansi"/>
             <arg value="plaisio:kernel-properties"/>
         </exec>
+    </target>
+
+    <target name="sprite">
+        <Sprite cssBaseClass="icons-small"
+                cssFilename="css/plaisio/page-decorator-core/icons-small.css"
+                spriteFilename="www/css/plaisio/page-decorator-core/images/icons-small.png"
+                resourceRoot="www">
+            <fileset dir="www/css/plaisio/page-decorator-core/images/12x12/">
+                <include name="**/*.png"/>
+            </fileset>
+        </Sprite>
     </target>
 
     <!-- Runs all unit tests -->
