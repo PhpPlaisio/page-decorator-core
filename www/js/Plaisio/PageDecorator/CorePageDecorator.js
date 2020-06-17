@@ -17,7 +17,8 @@ define(
     Form.registerForm('form');
     InputTable.registerTable('form');
 
-    OverviewTable.registerTable('.overview-table');
+      let mq = window.matchMedia("only screen and (max-width: 40em)");
+      OverviewTable.registerTable('table.overview-table', mq);
 
     if (window.hasOwnProperty('php_plaisio_inline_js')) {
       eval(php_plaisio_inline_js);

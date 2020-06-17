@@ -35,6 +35,7 @@ class CorePageDecorator extends PlaisioObject implements PageDecorator
     $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/admin-menu-icon-large.css');
     $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/admin-menu-icon-small.css');
     $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/secondary-menu.css');
+    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/content.css');
     $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/detail-table.css');
     $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/overview-table.css');
     $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/overview-table-large.css');
