@@ -1,0 +1,95 @@
+table.overview-table
+{
+  empty-cells:     show;
+  border-spacing:  2px;
+  border-collapse: separate;
+}
+
+tr.overview-table > th
+{
+  text-align:       center;
+  vertical-align:   middle;
+  padding:          5px;
+  background-color: #D3DCEE;
+  font-weight:      bold;
+}
+
+tr.overview-table > td
+{
+  padding:        5px;
+  vertical-align: middle;
+}
+
+tr.overview-table > td > *
+{
+  margin:  0;
+  padding: 0;
+}
+
+tr.overview-table > td > a
+{
+  display: block;
+}
+
+tr.overview-table.even > td
+{
+  background-color: #EEEEEE;
+}
+
+tr.overview-table.odd > td
+{
+  background-color: #D5D5D5;
+}
+
+tr.overview-table:hover > td
+{
+  background-color: #B7F9B7;
+}
+
+tr.overview-table > td.hidden,
+tr.overview-table > th.hidden
+{
+  background: transparent none;
+  padding:    0;
+}
+
+thead.overview-table > tr.table_actions img
+{
+  cursor:         pointer;
+  vertical-align: middle;
+  height:         auto;
+  margin:         0 3px 0 0;
+}
+
+thead.overview-table > tr.table_actions img:hover
+{
+  background-color: #B7F9B7;
+}
+
+thead.overview-table > tr.table_actions img.noaction
+{
+  cursor: auto;
+}
+
+thead.overview-table > tr.table_actions img.noaction:hover
+{
+  background-color: transparent;
+}
+
+thead.overview-table > tr.table_actions span.row_count
+{
+  padding:        2px 2px;
+  margin:         0 3px 0 0;
+  border:         1px solid gray;
+  height:         12px;
+  font-size:      12px;
+  display:        inline-block;
+  text-align:     center;
+  vertical-align: bottom;
+}
+
+
+thead.overview-table > tr.overview-table > th.empty
+{
+  background-color: transparent;
+}

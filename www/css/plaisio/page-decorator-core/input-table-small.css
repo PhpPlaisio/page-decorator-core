@@ -1,0 +1,7 @@
+@media only screen and (max-width: 40em)
+{
+  tr.input-table > td
+  {
+    width: 100%;
+  }
+}

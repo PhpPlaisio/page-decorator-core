@@ -1,0 +1,70 @@
+@media only screen and (max-width: 40em)
+{
+  table.overview-table
+  {
+    width: 100%;
+  }
+
+  /* Force table to not be like tables anymore */
+  table.overview-table,
+  thead.overview-table,
+  tbody.overview-table,
+  tr.overview-table,
+  tr.overview-table > th,
+  tr.overview-table > td
+  {
+    display: block;
+  }
+
+  tr.overview-table > td
+  {
+    min-height: 12px;
+  }
+
+  tr.overview-table
+  {
+    margin-bottom: 0.5em;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  tr.overview-table > th
+  {
+    position: absolute;
+    top:      -9999px;
+    left:     -9999px;
+  }
+
+  tr.overview-table > td,
+  tr.overview-table.filter > td
+  {
+    border:        none;
+    border-bottom: 1px solid white;
+    position:      relative;
+    padding-left:  45%;
+    text-align:    left;
+  }
+
+  tr.overview-table > td:before,
+  tr.overview-table.filter > td:before
+  {
+    position:         absolute;
+    top:              0;
+    left:             0;
+    bottom:           0;
+    padding:          5px 5px 5px 6px;
+    font-weight:      bold;
+    width:            41%;
+    white-space:      nowrap;
+    overflow-x:       hidden;
+    background-color: #D3DCEE;
+    font-family:      Arial, Helvetica, sans-serif;
+  }
+
+  tr.overview-table.filter > td
+  {
+    background-color: #DDDDDD;
+    padding-top:      0;
+    padding-bottom:   0;
+    padding-right:    0;
+  }
+}

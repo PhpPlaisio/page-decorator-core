@@ -1,0 +1,46 @@
+@media only screen and (min-width: 40em)
+{
+  tr.overview-table > td.bool
+  {
+    text-align:     center;
+    padding-top:    4px;
+    padding-bottom: 4px;
+  }
+
+  tr.overview-table > td.date
+  {
+    font-family: "Courier New", Courier, monospace;
+    min-width:   6em;
+    text-align:  center;
+  }
+
+  tr.overview-table > td.datetime
+  {
+    font-family: "Courier New", Courier, monospace;
+    min-width:   10em;
+    text-align:  center;
+  }
+
+  tr.overview-table > td.ip
+  {
+    font-family: "Courier New", Courier, monospace;
+    text-align:  right;
+  }
+
+  tr.overview-table > td.number
+  {
+    font-family: "Courier New", Courier, monospace;
+    text-align:  right;
+  }
+
+  tr.overview-table > td.control
+  {
+    padding: 0;
+  }
+
+  tr.overview-table > td.checkbox
+  {
+    text-align: center;
+    padding:    0 5px;
+  }
+}

@@ -1,0 +1,188 @@
+/* ------------------------------------------------------------------------------------------------------------------ */
+form,
+fieldset
+{
+  border:  none;
+  padding: 0;
+  width:   auto;
+}
+
+fieldset.input-table
+{
+  display:     block;
+  white-space: nowrap;
+}
+
+table.input-table
+{
+  margin:          2px -2px;
+  empty-cells:     show;
+  border-spacing:  2px;
+  border-collapse: separate;
+}
+
+tr.input-table > th
+{
+  text-align:       center;
+  vertical-align:   middle;
+  padding:          4px;
+  color:            black;
+  background-color: #D3DCEE;
+  border:           none;
+  font-weight:      bold;
+}
+
+tr.input-table > th > span.mandatory
+{
+  color: red;
+}
+
+td.input-table
+{
+  background-color: #EEEEEE;
+  padding:          0 2px;
+  vertical-align:   middle;
+}
+
+tr.input-table > th.empty,
+tr.input-table > td.empty
+{
+  background: transparent none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/*                                                                                                                    */
+/*                                                          Style for input types                                     */
+/*                                                                                                                    */
+/* ------------------------------------------------------------------------------------------------------------------ */
+td.input-table > input[type="password"],
+td.input-table > input[type="text"],
+td.input-table > textarea
+{
+  vertical-align:   middle;
+  background-color: white;
+  padding:          2px;
+  border:           1px solid #999999;
+  margin:           0;
+}
+
+td.input-table > input[type="radio"],
+td.input-table > input[type="checkbox"],
+td.input-table > span > input[type="radio"],
+td.input-table > span > input[type="checkbox"]
+{
+  vertical-align: middle;
+  margin:         2px;
+}
+
+td.input-table > input.numeric
+{
+  text-align: right;
+}
+
+td.input-table > div.input
+{
+  margin:         3px 0 3px 0;
+  vertical-align: middle;
+}
+
+td.input-table > span.checkboxes,
+td.input-table > span.radios
+{
+  margin:  0;
+  padding: 0;
+}
+
+td.input-table > span.checkboxes label,
+td.input-table > span.radios label
+{
+  margin:         0 5px 0 0;
+  vertical-align: middle;
+}
+
+td.input-table > span,
+td.input-table > a
+{
+  padding:        5px 2px;
+  vertical-align: middle;
+}
+
+td.input-table > span.numeric,
+td.input-table > div.numeric
+{
+  float: right;
+}
+
+td.input-table > img.icon
+{
+  display:        block;
+  vertical-align: middle;
+  border:         0;
+  height:         12px;
+  padding:        0 0.6ex 0 0.6ex;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/*                                                                                                                    */
+/*                                                          Style for buttons                                         */
+/*                                                                                                                    */
+/* ------------------------------------------------------------------------------------------------------------------ */
+table.button
+{
+  width:      100%;
+  margin-top: 2px;
+}
+
+table.button td
+{
+  text-align: center;
+}
+
+.btn-link
+{
+  text-transform: lowercase;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+.ui-datepicker-trigger
+{
+  padding:        0 2px 0 3px;
+  vertical-align: middle;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/*                                                                                                                    */
+/*                                             Style for WeaponAgeGender controls                                     */
+/*                                                                                                                    */
+/* ------------------------------------------------------------------------------------------------------------------ */
+table.weapon_age_gender td
+{
+  text-align:     center;
+  vertical-align: middle;
+  padding-right:  0.8em;
+}
+
+table.weapon_age_gender td.age_name
+{
+  font-weight: bold;
+}
+
+table.weapon_age_gender td.age_years
+{
+  font-size: small;
+  height:    14px;
+}
+
+table.weapon_age_gender td.weapon
+{
+  text-align: left;
+}
+
+table.weapon_age_gender input,
+table.weapon_age_gender label
+{
+  margin:         2px;
+  vertical-align: middle;;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */

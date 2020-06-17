@@ -1,0 +1,44 @@
+@media only screen and (min-width: 40em)
+{
+  tr.overview-table > th.sort,
+  tr.overview-table > th.sort-1,
+  tr.overview-table > th.sort-2,
+  tr.overview-table > th.header
+  {
+    cursor:        pointer;
+    background:    #D3DCEE url(images/bg_header_sortable.png) no-repeat right center;
+    padding-right: 13px;
+  }
+
+  tr.overview-table > th.sorted-asc,
+  tr.overview-table > th.sorted-2-asc
+  {
+    background-image: url(images/bg_header_down.png);
+  }
+
+  tr.overview-table > th.sorted-desc,
+  tr.overview-table > th.sorted-2-desc
+  {
+    background-image: url(images/bg_header_up.png);
+  }
+
+  tr.overview-table > th.sort-1 span
+  {
+    position:   relative;
+    top:        0;
+    left:       -4px;
+    width:      10px;
+    background: transparent url(images/bg_header_sortable.png) no-repeat left center;
+    float:      left;
+  }
+
+  tr.overview-table > th.sorted-1-asc span
+  {
+    background-image: url(images/bg_header_down.png);
+  }
+
+  tr.overview-table > th.sorted-1-desc span
+  {
+    background-image: url(images/bg_header_up.png);
+  }
+}

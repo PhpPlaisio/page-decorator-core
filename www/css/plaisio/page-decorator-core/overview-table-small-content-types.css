@@ -1,0 +1,12 @@
+@media only screen and (max-width: 40em)
+{
+  tr.overview-table > td:before
+  {
+    color: black;
+  }
+
+  tr.overview-table > td.error:empty
+  {
+    display: none;
+  }
+}

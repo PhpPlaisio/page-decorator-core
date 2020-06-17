@@ -1,0 +1,7 @@
+@media all and (min-width: 40em)
+{
+  .admin-menu-icon
+  {
+    display: none;
+  }
+}

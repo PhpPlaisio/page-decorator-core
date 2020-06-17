@@ -1,0 +1,18 @@
+@media only screen and (max-width: 40em)
+{
+  tr.overview-table.filter > td
+  {
+    background-color: #DDDDDD;
+    padding-top:      0;
+    padding-bottom:   0;
+    padding-right:    0;
+  }
+
+  tr.overview-table.filter > td > input
+  {
+    width:  99%;
+    margin: 0;
+    border: 1px solid #999999;
+    height: 20px;
+  }
+}

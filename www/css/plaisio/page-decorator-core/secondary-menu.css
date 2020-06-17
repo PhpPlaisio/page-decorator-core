@@ -1,0 +1,56 @@
+.secondary-menu
+{
+  padding-left:  40px;
+  border-bottom: 1px solid #999999;
+  list-style:    none;
+  background:    #EEEEEE;
+}
+
+.secondary-menu li
+{
+  float:   left;
+  margin:  0 1px 0 2px;
+  padding: 0;
+}
+
+.secondary-menu a
+{
+  position:      relative;
+  left:          1px;
+  color:         #333333;
+  background:    #CBCBCB;
+  display:       block;
+  float:         left;
+  margin:        5px 0 -1px;
+  padding:       4px 8px;
+  border:        1px solid #777777;
+  border-bottom: 1px solid white;
+}
+
+.secondary-menu a:not(.selected)
+{
+  border-bottom: 0;
+}
+
+.secondary-menu a.selected
+{
+  color:      #222222;
+  background: #FEFEFF; /* Equal to body.background */
+}
+
+.secondary-menu a:hover
+{
+  text-decoration: none;
+}
+
+.secondary-menu a:not(.selected):not(.disabled):hover
+{
+  color:      #333333;
+  background: #B7F9B7;
+}
+
+.secondary-menu a.disabled
+{
+  color:      #777777;
+  background: #EEEEEE; /* Equal to .secondary-menu.background */
+}

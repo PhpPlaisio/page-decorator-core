@@ -1,0 +1,109 @@
+table.detail-table
+{
+  empty-cells:     show;
+  border-spacing:  2px;
+  border-collapse: separate;
+  margin:          -2px;
+}
+
+tr.detail-table > th
+{
+  padding:          4px;
+  background-color: #D3DCEE;
+  vertical-align:   middle;
+  text-align:       center;
+  font-weight:      bold;
+}
+
+tr.detail-table > td
+{
+  padding:          4px;
+  background-color: #DDDDDD;
+  vertical-align:   middle;
+}
+
+thead.detail-table > td
+{
+  padding:          0;
+  background-color: transparent;
+}
+
+tfoot.detail-table > td
+{
+  padding:          0;
+  background-color: transparent;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/**
+ * Styles for specific content types.
+ */
+tr.detail-table > td.address,
+tr.detail-table > td.circuits,
+tr.detail-table > td.links,
+tr.detail-table > td.multi-line
+{
+  line-height: 120%;
+}
+
+tr.detail-table > td.address > span
+{
+  display:        table-cell;
+  vertical-align: middle;
+}
+
+tr.detail-table > td.address > span.address-map
+{
+  padding-left: 1em;
+}
+
+tr.detail-table > td.comment
+{
+  max-width:   80ex;
+  line-height: 120%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+table.distance
+{
+  border-collapse: separate;
+}
+
+img.distance
+{
+  vertical-align: middle;
+}
+
+tr.distance > td.vehicle-icon
+{
+  vertical-align: middle;
+  padding-right:  6px;
+}
+
+tr.distance > td.distance
+{
+  vertical-align: middle;
+  padding-right:  4px;
+  text-align:     right;
+}
+
+tr.distance > td.unit
+{
+  text-align:     left;
+  vertical-align: middle;
+  padding-right:  12px;
+}
+
+tr.distance > td.time
+{
+  vertical-align: middle;
+  padding:        0 12px;
+}
+
+tr.distance > td.route-map
+{
+  vertical-align: middle;
+  padding:        0 12px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
