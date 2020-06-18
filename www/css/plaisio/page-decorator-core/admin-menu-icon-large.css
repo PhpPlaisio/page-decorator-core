@@ -4,4 +4,16 @@
   {
     display: none;
   }
+
+  div.admin-menu-logo a
+  {
+    display:    block;
+    position:   relative;
+    left:       0;
+    top:        0;
+    height:     120px;
+    width:      120px;
+    margin:     0 2px 2px 2px;
+    background: center / contain no-repeat url('images/plaisio-logo.png');
+  }
 }
