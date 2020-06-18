@@ -50,7 +50,7 @@ class CorePageDecorator extends PlaisioObject implements PageDecorator
     $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/button.css');
     $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/icons-small.css');
     $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/icons-medium.css');
-    
+
     $this->nub->assets->jsAdmSetPageSpecificMain(__CLASS__);
 
     $this->nub->assets->setPageTitle($this->nub->pageInfo['ptb_title']);
@@ -69,6 +69,10 @@ class CorePageDecorator extends PlaisioObject implements PageDecorator
     echo '<div class="menu-bar1"></div>';
     echo '<div class="menu-bar2"></div>';
     echo '<div class="menu-bar3"></div>';
+    echo '</div>';
+
+    echo '<div class="admin-menu-logo">';
+    echo '<a href="/"></a>';
     echo '</div>';
 
     echo $this->nub->menu->menu(C::MNU_ID_ADMIN);

@@ -1,9 +1,14 @@
 @media all and (min-width: 40em)
 {
+  div.grid-admin-menu
+  {
+    border-right: #333333 1px solid;
+    width:        120px;
+  }
+
   ul.menu-admin.menu-level-0
   {
     border-top:       1px solid #777777;
-    border-right:     1px solid #777777;
     white-space:      nowrap;
     background-color: white;
   }

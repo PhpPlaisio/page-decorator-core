@@ -1,5 +1,10 @@
 @media all and (max-width: 40em)
 {
+  div.admin-menu-logo
+  {
+    display: none;
+  }
+
   div.grid-admin-menu
   {
     position:  absolute;
