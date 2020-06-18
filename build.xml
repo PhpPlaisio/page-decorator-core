@@ -23,6 +23,15 @@
                 <include name="**/*.png"/>
             </fileset>
         </Sprite>
+        
+        <Sprite cssBaseClass="icons-medium"
+                cssFilename="css/plaisio/page-decorator-core/icons-medium.css"
+                spriteFilename="www/css/plaisio/page-decorator-core/images/icons-medium.png"
+                resourceRoot="www">
+            <fileset dir="www/css/plaisio/page-decorator-core/images/16x16/">
+                <include name="**/*.png"/>
+            </fileset>
+        </Sprite>
     </target>
 
     <!-- Runs all unit tests -->
