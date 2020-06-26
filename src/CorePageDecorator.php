@@ -25,33 +25,10 @@ class CorePageDecorator extends PlaisioObject implements PageDecorator
   {
     parent::__construct($object);
 
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/reset.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/style.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/grid.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/grid-large.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/grid-small.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/admin-menu-large.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/admin-menu-small.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/admin-menu-icon-large.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/admin-menu-icon-small.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/secondary-menu.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/content.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/detail-table.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/overview-table.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/overview-table-large.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/overview-table-large-content-types.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/overview-table-large-filter.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/overview-table-large-sort.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/overview-table-small.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/overview-table-small-content-types.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/overview-table-small-filter.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/input-table.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/input-table-small.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/button.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/icons-small.css');
-    $this->nub->assets->cssAppendSource('plaisio/page-decorator-core/icons-medium.css');
+    $this->nub->assets->metaAddElement(['name' => 'viewport', 'content' => 'width=device-width, initial-scale=1.0']);
 
-    $this->nub->assets->jsAdmSetPageSpecificMain(__CLASS__);
+    $this->nub->assets->cssPushSourcesList(__CLASS__);
+    $this->nub->assets->jsAdmSetMain(__CLASS__);
 
     $this->nub->assets->setPageTitle($this->nub->pageInfo['ptb_title']);
     $this->nub->assets->appendPageTitle($this->nub->pageInfo['pag_title']);

@@ -16,19 +16,19 @@
 
     <target name="sprite">
         <Sprite cssBaseClass="icons-small"
-                cssFilename="css/plaisio/page-decorator-core/icons-small.css"
-                spriteFilename="www/css/plaisio/page-decorator-core/images/icons-small.png"
+                cssFilename="css/Plaisio/PageDecorator/CorePageDecorator/icons-small.css"
+                spriteFilename="www/css/Plaisio/PageDecorator/CorePageDecorator/images/icons-small.png"
                 resourceRoot="www">
-            <fileset dir="www/css/plaisio/page-decorator-core/images/12x12/">
+            <fileset dir="www/css/Plaisio/PageDecorator/CorePageDecorator/images/12x12/">
                 <include name="**/*.png"/>
             </fileset>
         </Sprite>
         
         <Sprite cssBaseClass="icons-medium"
-                cssFilename="css/plaisio/page-decorator-core/icons-medium.css"
-                spriteFilename="www/css/plaisio/page-decorator-core/images/icons-medium.png"
+                cssFilename="css/Plaisio/PageDecorator/CorePageDecorator/icons-medium.css"
+                spriteFilename="www/css/Plaisio/PageDecorator/CorePageDecorator/images/icons-medium.png"
                 resourceRoot="www">
-            <fileset dir="www/css/plaisio/page-decorator-core/images/16x16/">
+            <fileset dir="www/css/Plaisio/PageDecorator/CorePageDecorator/images/16x16/">
                 <include name="**/*.png"/>
             </fileset>
         </Sprite>
