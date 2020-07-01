@@ -1,10 +1,5 @@
 @media only screen and (min-width: 40em)
 {
-  tr.overview-table.filter
-  {
-    display: none;
-  }
-
   tr.overview-table.filter > td
   {
     background-color: #DDDDDD;
@@ -13,9 +8,10 @@
 
   tr.overview-table.filter > td > input
   {
-    width:   1px;
-    padding: 0;
-    margin:  0;
-    border:  1px solid #999999;
+    width:      1px;
+    padding:    0;
+    margin:     0;
+    border:     1px solid #999999;
+    visibility: hidden;
   }
 }

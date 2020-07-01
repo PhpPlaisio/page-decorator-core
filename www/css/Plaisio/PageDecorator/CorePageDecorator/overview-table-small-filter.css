@@ -1,5 +1,10 @@
 @media only screen and (max-width: 40em)
 {
+  tr.overview-table.filter
+  {
+    display: none;
+  }
+
   tr.overview-table.filter > td
   {
     background-color: #DDDDDD;
