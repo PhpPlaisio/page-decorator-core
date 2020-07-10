@@ -4,11 +4,11 @@
 /composer.lock
 /custom.task.properties
 /custom.type.properties
-/lib/psql/babel-core
+/node_modules/
+/package-lock.json
+/plaisio-assets.csv
 /test/coverage.xml
-/test/etc/columns.txt
-/test/etc/routines.json
-/test/report/
 /vendor/
-/www/js/jquery
-/www/js/SetBased
+/www/js/**/*.js
+/www/js/Plaisio/Form
+/www/js/Plaisio/Table
