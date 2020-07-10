@@ -8,6 +8,7 @@
 /package-lock.json
 /plaisio-assets.csv
 /test/coverage.xml
+/test/report/
 /vendor/
 /www/js/**/*.js
 /www/js/Plaisio/Form
