@@ -1,4 +1,4 @@
-import Cookies = require("js-cookie");
+import * as Cookies from 'js-cookie';
 
 /**
  * Class for input tables.
