@@ -25,7 +25,7 @@
   "require-dev": {
     "phing/phing": "3.0.x-dev",
     "phpunit/phpunit": "^9.0",
-    "plaisio/console": "^2.4.2",
+    "plaisio/console": "^2.4.4",
     "plaisio/phing-extensions": "dev-master"
   },
   "autoload": {

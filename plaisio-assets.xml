@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <assets>
-    <asset type="js" dir="www/js">
-       <include name="**/*.ts"/>
+    <asset type="js">
+        <fileset dir="www/js">
+            <include name="**/*.ts"/>
+        </fileset>
     </asset>
-    <asset type="css" dir="www/css">
-        <include name="**/*"/>
+    <asset type="css">
+        <fileset dir="www/css">
+            <include name="**/*"/>
+        </fileset>
     </asset>
     <root>www</root>
 </assets>
