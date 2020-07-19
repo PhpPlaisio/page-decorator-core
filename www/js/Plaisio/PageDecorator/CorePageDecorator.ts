@@ -6,6 +6,9 @@ import * as $ from 'jquery';
 export class CorePageDecorator
 {
   //--------------------------------------------------------------------------------------------------------------------
+  /**
+   * Initializes the page decorator.
+   */
   public static init()
   {
     $('form').on('submit', InputTable.setCsrfValue);
