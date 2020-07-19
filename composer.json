@@ -11,7 +11,7 @@
   "require": {
     "php": ">=7.3",
     "plaisio/babel": "^2.0",
-    "plaisio/form": "^0.11.9",
+    "plaisio/form": "^0.11.11",
     "plaisio/kernel": "^3.1",
     "plaisio/menu": "^1.0",
     "plaisio/page-decorator": "^1.0",
