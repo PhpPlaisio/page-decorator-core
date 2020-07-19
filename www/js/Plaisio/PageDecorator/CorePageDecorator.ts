@@ -1,7 +1,6 @@
-import {Form} from "../Form/Form";
-import {OverviewTablePackage as OverviewTable} from "../Table/OverviewTablePackage";
-import {InputTable} from "./InputTable";
 import * as $ from 'jquery';
+import {Form} from '../Form/Form';
+import {OverviewTablePackage as OverviewTable} from '../Table/OverviewTablePackage';
 
 export class CorePageDecorator
 {
@@ -11,9 +10,7 @@ export class CorePageDecorator
    */
   public static init()
   {
-    $('form').on('submit', InputTable.setCsrfValue);
     Form.registerForm('form');
-    InputTable.registerTable('form');
 
     // Register all overview tables.
     let mq = window.matchMedia("only screen and (max-width: 40em)");
@@ -39,7 +36,7 @@ export class CorePageDecorator
   {
     let $table = $(event.target);
 
-    let all = $table.children('tbody').children('tr').length;
+    let all     = $table.children('tbody').children('tr').length;
     let visible = $table.children('tbody').children('tr:visible').length;
 
     if (all === visible)
@@ -56,4 +53,3 @@ export class CorePageDecorator
 }
 
 //----------------------------------------------------------------------------------------------------------------------
-CorePageDecorator.init();

@@ -1,4 +1,3 @@
-// @ts-ignore
 requirejs.config({
   baseUrl: '/js',
   paths: {
@@ -8,5 +7,8 @@ requirejs.config({
   }
 });
 
-// @ts-ignore
-require(["Plaisio/PageDecorator/CorePageDecorator"]);
+require(['Plaisio/PageDecorator/CorePageDecorator'],
+  function (CorePageDecorator)
+  {
+    CorePageDecorator.init();
+  });
