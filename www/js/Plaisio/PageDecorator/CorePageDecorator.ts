@@ -1,5 +1,5 @@
 import * as $ from 'jquery';
-import {Form} from '../Form/Form';
+import {FormPackage as Form} from '../Form/FormPackage';
 import {OverviewTablePackage as OverviewTable} from '../Table/OverviewTablePackage';
 
 export class CorePageDecorator
