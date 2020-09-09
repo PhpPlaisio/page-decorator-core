@@ -8,7 +8,7 @@ requirejs.config({
 });
 
 require(['Plaisio/PageDecorator/CorePageDecorator'],
-  function (CorePageDecorator)
+  function (CorePageDecorator: any)
   {
     CorePageDecorator.init();
   });
