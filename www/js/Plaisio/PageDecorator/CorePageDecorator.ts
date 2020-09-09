@@ -13,7 +13,7 @@ export class CorePageDecorator
     Form.registerForm('form');
 
     // Register all overview tables.
-    let mq = window.matchMedia("only screen and (max-width: 40em)");
+    const mq = window.matchMedia("only screen and (max-width: 40em)");
     OverviewTable.registerTable('table.overview-table', mq);
 
     // Install event handler for displaying the row count of am overview table.
@@ -32,12 +32,12 @@ export class CorePageDecorator
    *
    * @param event The OverviewTable.FILTERING_ENDED event.
    */
-  public static overviewTableRowCount(event): void
+  public static overviewTableRowCount(event: JQuery.TriggeredEvent): void
   {
-    let $table = $(event.target);
+    const $table = $(event.target);
 
-    let all     = $table.children('tbody').children('tr').length;
-    let visible = $table.children('tbody').children('tr:visible').length;
+    const all     = $table.children('tbody').children('tr').length;
+    const visible = $table.children('tbody').children('tr:visible').length;
 
     if (all === visible)
     {
