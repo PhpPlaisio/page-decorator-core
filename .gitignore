@@ -11,5 +11,7 @@
 /test/report/
 /vendor/
 /www/js/**/*.js
-/www/js/Plaisio/Form
-/www/js/Plaisio/Table
+/www/js/**/*.map
+/www/js/Plaisio/Form/
+/www/js/Plaisio/Helper/
+/www/js/Plaisio/Table/
