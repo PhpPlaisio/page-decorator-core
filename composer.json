@@ -15,7 +15,7 @@
     "plaisio/kernel": "^3.1",
     "plaisio/menu": "^1.0",
     "plaisio/page-decorator": "^1.0",
-    "plaisio/response-core": "^1.1",
+    "plaisio/response-core": "^1.1 || ^2.0",
     "plaisio/table-overview": "^3.0",
     "plaisio/web-assets": "^2.0",
     "setbased/exception": "^2.1"
