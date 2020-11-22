@@ -5,6 +5,7 @@ namespace Plaisio\PageDecorator;
 
 use Plaisio\C;
 use Plaisio\Helper\Html;
+use Plaisio\Helper\OB;
 use Plaisio\PlaisioInterface;
 use Plaisio\PlaisioObject;
 use Plaisio\Response\HtmlResponse;
@@ -62,7 +63,7 @@ class CorePageDecorator extends PlaisioObject implements PageDecorator
    */
   public function decorate(string $content): Response
   {
-    ob_start();
+    $ob = new OB();
 
     $this->echoPageLeader();
     echo '<div class="grid-container">';
@@ -73,9 +74,7 @@ class CorePageDecorator extends PlaisioObject implements PageDecorator
     echo '</div>';
     $this->echoPageTrailer();
 
-    $content = ob_get_clean();
-
-    return new HtmlResponse($content);
+    return new HtmlResponse($ob->getClean());
   }
 
   //--------------------------------------------------------------------------------------------------------------------

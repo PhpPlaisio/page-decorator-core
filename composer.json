@@ -12,6 +12,7 @@
     "php": ">=7.4",
     "plaisio/babel": "^2.0",
     "plaisio/form": "^0.12.0",
+    "plaisio/helper-ob": "^1.0",
     "plaisio/kernel": "^3.1",
     "plaisio/menu": "^1.0",
     "plaisio/page-decorator": "^1.0",
