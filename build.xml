@@ -16,6 +16,13 @@
         </exec>
         <phing phingfile="build.xml" target="kernel" haltonfailure="true"/>
         <phing phingfile="build.xml" target="sprite" haltonfailure="true"/>
+
+        <!-- Show outdated packages -->
+        <exec executable="composer" checkreturn="true" passthru="true">
+            <arg value="--ansi"/>
+            <arg value="outdated"/>
+            <arg value="--direct"/>
+        </exec>
     </target>
 
     <target name="kernel">
@@ -34,7 +41,7 @@
                 <include name="**/*.png"/>
             </fileset>
         </Sprite>
-        
+
         <Sprite cssBaseClass="icons-medium"
                 cssFilename="css/Plaisio/PageDecorator/CorePageDecorator/icons-medium.css"
                 spriteFilename="www/css/Plaisio/PageDecorator/CorePageDecorator/images/icons-medium.png"
