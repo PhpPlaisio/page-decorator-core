@@ -1,0 +1,43 @@
+.ot-currency,
+.ot-date,
+.ot-datetime,
+.ot-email,
+.ot-icon,
+.ot-ipv4,
+.ot-link,
+.ot-number,
+.ot-text
+{
+  padding:        5px;
+  vertical-align: middle;
+}
+
+.ot-bool,
+.ot-control-checkbox
+{
+  text-align:     center;
+  vertical-align: middle;
+}
+
+.ot-currency,
+.ot-number
+{
+  font-family:    "Courier New", Courier, monospace;
+  text-align:     right;
+  vertical-align: middle;
+}
+
+.ot-currency:before
+{
+  float:         left;
+  padding-right: 4px;
+  content:       "€";
+}
+
+.ot-date,
+.ot-datetime
+{
+  font-family:    "Courier New", Courier, monospace;
+  text-align:     center;
+  vertical-align: middle;
+}

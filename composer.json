@@ -11,11 +11,14 @@
   "require": {
     "php": ">=7.4",
     "plaisio/babel": "^2.0",
+    "plaisio/form": "^0.41.0",
+    "plaisio/form-louver": "^0.40.1",
     "plaisio/helper-ob": "^1.1.1",
     "plaisio/kernel": "^3.1.1",
     "plaisio/menu": "^1.0.0",
-    "plaisio/page-decorator": "^1.0",
+    "plaisio/page-decorator": "^1.1.0",
     "plaisio/response-core": "^2.3.0",
+    "plaisio/table-overview": "^4.0.0",
     "plaisio/web-assets": "^2.0.0",
     "setbased/exception": "^2.1.2"
   },
@@ -23,8 +26,8 @@
   "prefer-stable": true,
   "require-dev": {
     "phing/phing": "3.0.x-dev",
-    "phpunit/phpunit": "^9.4.3",
-    "plaisio/console": "^2.4.6",
+    "phpunit/phpunit": "^9.5.0",
+    "plaisio/console": "^2.4.8",
     "plaisio/phing-extensions": "dev-master"
   },
   "autoload": {

@@ -1,17 +1,22 @@
 @media only screen and (min-width: 40em)
 {
-  tr.overview-table.filter > td
+  td.ot-filter
   {
-    background-color: #DDDDDD;
     padding:          0;
+    background-color: #dddddd;
   }
 
-  tr.overview-table.filter > td > input
+  .ot-filter-text
   {
-    width:      1px;
-    padding:    0;
-    margin:     0;
-    border:     1px solid #999999;
     visibility: hidden;
+    width:      1px;
+    margin:     0;
+    padding:    0;
+    border:     1px solid #d5d5d5;
+  }
+
+  .ot-filer-text:focus
+  {
+    border-color: #acacac;
   }
 }

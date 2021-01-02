@@ -1,23 +1,23 @@
 @media only screen and (max-width: 40em)
 {
-  tr.overview-table.filter
+  .ot-filter-row
   {
     display: none;
   }
 
-  tr.overview-table.filter > td
+  .ot-filter
   {
-    background-color: #DDDDDD;
     padding-top:      0;
-    padding-bottom:   0;
     padding-right:    0;
+    padding-bottom:   0;
+    background-color: #dddddd;
   }
 
-  tr.overview-table.filter > td > input
+  .ot-filter-text
   {
     width:  99%;
+    height: 20px;
     margin: 0;
     border: 1px solid #999999;
-    height: 20px;
   }
 }

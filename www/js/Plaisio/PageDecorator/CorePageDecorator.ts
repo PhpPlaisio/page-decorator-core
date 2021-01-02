@@ -1,3 +1,4 @@
+import '../LouverForm/LouverFormPackage';
 import * as $ from 'jquery';
 import {FormPackage as Form} from '../Form/FormPackage';
 import {OverviewTablePackage as OverviewTable} from '../Table/OverviewTablePackage';
@@ -14,7 +15,7 @@ export class CorePageDecorator
 
     // Register all overview tables.
     const mq = window.matchMedia("only screen and (max-width: 40em)");
-    OverviewTable.registerTable('table.overview-table', mq);
+    OverviewTable.registerTable('table', mq);
 
     // Install event handler for displaying the row count of am overview table.
     $('body').on(OverviewTable.FILTERING_ENDED, CorePageDecorator.overviewTableRowCount)
@@ -53,3 +54,4 @@ export class CorePageDecorator
 }
 
 //----------------------------------------------------------------------------------------------------------------------
+// Plaisio\Console\Helper\TypeScript\TypeScriptMarkHelper::md5: c420b2108a8c5092a431f50d1c5d5570

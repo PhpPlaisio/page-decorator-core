@@ -1,32 +1,10 @@
-@media only screen and (max-width: 40em)
+@media only screen and (min-width: 40em)
 {
-  tr.input-table > td
-  {
-    width: 100%;
-  }
-
   /* ---------------------------------------------------------------------------------------------------------------- */
   /*                                                                                                                  */
   /*                                           labels and errors                                                      */
   /*                                                                                                                  */
   /* ---------------------------------------------------------------------------------------------------------------- */
-  th.input-table > label
-  {
-    font-weight:   bold;
-    display:       block;
-    max-width:     calc(100vw - 2 * (6px + 1px + 2px)); /* 6 from div.layout-content, 1 from border, and 2 from padding */
-    margin-bottom: 2px;
-    text-align:    left;
-    color:         #454545;
-  }
-
-  tr.input-table input[type="radio"] + label,
-  tr.input-table input[type="checkbox"] + label
-  {
-    font-weight: normal;
-    display:     inline;
-  }
-
   th.input-table > label.mandatory:after
   {
     color: red;

@@ -1,11 +1,11 @@
-table.overview-table
+table.ot
 {
   empty-cells:     show;
   border-spacing:  2px;
   border-collapse: separate;
 }
 
-tr.overview-table > th
+.ot-header
 {
   text-align:       center;
   vertical-align:   middle;
@@ -14,69 +14,28 @@ tr.overview-table > th
   font-weight:      bold;
 }
 
-tr.overview-table > td
-{
-  padding:        5px;
-  vertical-align: middle;
-}
-
-tr.overview-table > td > *
-{
-  margin:  0;
-  padding: 0;
-}
-
-tr.overview-table > td > a
-{
-  display: block;
-}
-
-tr.overview-table.even > td
+.ot-row.even
 {
   background-color: #EEEEEE;
 }
 
-tr.overview-table.odd > td
+.ot-row.is-odd
 {
   background-color: #D5D5D5;
 }
 
-tr.overview-table:hover > td
+.ot-row:hover
 {
   background-color: #B7F9B7;
 }
 
-tr.overview-table > td.hidden,
-tr.overview-table > th.hidden
-{
-  background: transparent none;
-  padding:    0;
-}
-
-thead.overview-table > tr.table_actions img
-{
-  cursor:         pointer;
-  vertical-align: middle;
-  height:         auto;
-  margin:         0 3px 0 0;
-}
-
-thead.overview-table > tr.table_actions img:hover
+.ot-table-men-icon:hover,
+.ot-table-men-item:hover
 {
   background-color: #B7F9B7;
 }
 
-thead.overview-table > tr.table_actions img.noaction
-{
-  cursor: auto;
-}
-
-thead.overview-table > tr.table_actions img.noaction:hover
-{
-  background-color: transparent;
-}
-
-thead.overview-table > tr.table_actions span.row_count
+.ot-table-menu-row-count
 {
   padding:        2px 2px;
   margin:         0 3px 0 0;
@@ -86,10 +45,4 @@ thead.overview-table > tr.table_actions span.row_count
   display:        inline-block;
   text-align:     center;
   vertical-align: bottom;
-}
-
-
-thead.overview-table > tr.overview-table > th.empty
-{
-  background-color: transparent;
 }

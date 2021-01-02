@@ -1,70 +1,72 @@
 @media only screen and (max-width: 40em)
 {
-  table.overview-table
+  table.ot
   {
     width: 100%;
   }
 
   /* Force table to not be like tables anymore */
-  table.overview-table,
-  thead.overview-table,
-  tbody.overview-table,
-  tr.overview-table,
-  tr.overview-table > th,
-  tr.overview-table > td
+  table.ot,
+  thead.ot,
+  tbody.ot,
+  .ot-filter-row > td,
+  .ot-filter-row,
+  .ot-header,
+  .ot-row > td,
+  .ot-row
   {
     display: block;
   }
 
-  tr.overview-table > td
+  .ot-row > td
   {
     min-height: 12px;
   }
 
-  tr.overview-table
+  .ot-row
   {
     margin-bottom: 0.5em;
   }
 
   /* Hide table headers (but not display: none;, for accessibility) */
-  tr.overview-table > th
+  .ot-header
   {
     position: absolute;
     top:      -9999px;
     left:     -9999px;
   }
 
-  tr.overview-table > td,
-  tr.overview-table.filter > td
+  .ot-row > td,
+  .ot-filter-row > td
   {
+    position:      relative;
+    padding-left:  35vw;
+    text-align:    left;
     border:        none;
     border-bottom: 1px solid white;
-    position:      relative;
-    padding-left:  45%;
-    text-align:    left;
   }
 
-  tr.overview-table > td:before,
-  tr.overview-table.filter > td:before
+  .ot-row > td:before,
+  .ot-filter-row > td:before
   {
+    font-family:      Arial, Helvetica, sans-serif;
+    font-weight:      bold;
     position:         absolute;
     top:              0;
-    left:             0;
     bottom:           0;
-    padding:          5px 5px 5px 6px;
-    font-weight:      bold;
-    width:            41%;
-    white-space:      nowrap;
+    left:             0;
     overflow-x:       hidden;
-    background-color: #D3DCEE;
-    font-family:      Arial, Helvetica, sans-serif;
+    width:            31vw;
+    padding:          5px 5px 5px 6px;
+    white-space:      nowrap;
+    background-color: #d3dcee;
   }
 
-  tr.overview-table.filter > td
+  .ot-filter
   {
-    background-color: #DDDDDD;
     padding-top:      0;
-    padding-bottom:   0;
     padding-right:    0;
+    padding-bottom:   0;
+    background-color: #dddddd;
   }
 }

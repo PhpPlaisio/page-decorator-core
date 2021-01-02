@@ -50,6 +50,17 @@ tr.input-table > td.empty
   background: transparent none;
 }
 
+/* ---------------------------------------------------------------------------------------------------------------- */
+/*                                                                                                                  */
+/*                                           labels and errors                                                      */
+/*                                                                                                                  */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+th.input-table > label.mandatory:after
+{
+  content: '*';
+}
+
 /* ------------------------------------------------------------------------------------------------------------------ */
 /*                                                                                                                    */
 /*                                                          Style for input types                                     */
@@ -141,48 +152,6 @@ table.button td
 .btn-link
 {
   text-transform: lowercase;
-}
-
-/* ------------------------------------------------------------------------------------------------------------------ */
-.ui-datepicker-trigger
-{
-  padding:        0 2px 0 3px;
-  vertical-align: middle;
-}
-
-/* ------------------------------------------------------------------------------------------------------------------ */
-/*                                                                                                                    */
-/*                                             Style for WeaponAgeGender controls                                     */
-/*                                                                                                                    */
-/* ------------------------------------------------------------------------------------------------------------------ */
-table.weapon_age_gender td
-{
-  text-align:     center;
-  vertical-align: middle;
-  padding-right:  0.8em;
-}
-
-table.weapon_age_gender td.age_name
-{
-  font-weight: bold;
-}
-
-table.weapon_age_gender td.age_years
-{
-  font-size: small;
-  height:    14px;
-}
-
-table.weapon_age_gender td.weapon
-{
-  text-align: left;
-}
-
-table.weapon_age_gender input,
-table.weapon_age_gender label
-{
-  margin:         2px;
-  vertical-align: middle;;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
