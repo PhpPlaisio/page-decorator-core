@@ -1,4 +1,4 @@
-import '../LouverForm/LouverFormPackage';
+import '../Form/LouverFormPackage';
 import * as $ from 'jquery';
 import {FormPackage as Form} from '../Form/FormPackage';
 import {OverviewTablePackage as OverviewTable} from '../Table/OverviewTablePackage';
@@ -54,4 +54,4 @@ export class CorePageDecorator
 }
 
 //----------------------------------------------------------------------------------------------------------------------
-// Plaisio\Console\Helper\TypeScript\TypeScriptMarkHelper::md5: c420b2108a8c5092a431f50d1c5d5570
+// Plaisio\Console\Helper\TypeScript\TypeScriptMarkHelper::md5: f4919428bde0d59752b8c7a9b8d2b9b9
