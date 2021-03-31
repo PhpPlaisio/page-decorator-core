@@ -1,11 +1,26 @@
 # plaisio-css-list
 
-CorePageDecorator/reset.css
+# ----------------------------------------------------------------------------------------------------------------------
+#
+#                                                      Base
+#
+# ----------------------------------------------------------------------------------------------------------------------
+CorePageDecorator/1-base/reset.css
+
 CorePageDecorator/style.css
 
-CorePageDecorator/grid.css
-CorePageDecorator/grid-large.css
-CorePageDecorator/grid-small.css
+CorePageDecorator/icons-small.css
+CorePageDecorator/icons-medium.css
+
+# ----------------------------------------------------------------------------------------------------------------------
+#
+#                                                    Layout
+#
+# ----------------------------------------------------------------------------------------------------------------------
+CorePageDecorator/2-layout/content.css
+CorePageDecorator/2-layout/grid.css
+CorePageDecorator/2-layout/grid-large.css
+CorePageDecorator/2-layout/grid-small.css
 
 CorePageDecorator/admin-menu-large.css
 CorePageDecorator/admin-menu-small.css
@@ -14,25 +29,24 @@ CorePageDecorator/admin-menu-icon-small.css
 
 CorePageDecorator/secondary-menu.css
 
-CorePageDecorator/content.css
+# ----------------------------------------------------------------------------------------------------------------------
+#
+#                                                    Module
+#
+# ----------------------------------------------------------------------------------------------------------------------
+CorePageDecorator/3-module/button.css
+CorePageDecorator/3-module/dt.css
+CorePageDecorator/3-module/frm.css
 
-CorePageDecorator/detail-table.css
+CorePageDecorator/3-module/input-table-large.css
+CorePageDecorator/3-module/input-table-small.css
 
-CorePageDecorator/overview-table.css
-CorePageDecorator/overview-table-content-types.css
-CorePageDecorator/overview-table-large.css
-CorePageDecorator/overview-table-large-content-types.css
-CorePageDecorator/overview-table-large-filter.css
-CorePageDecorator/overview-table-large-sort.css
-CorePageDecorator/overview-table-small.css
-CorePageDecorator/overview-table-small-content-types.css
-CorePageDecorator/overview-table-small-filter.css
-
-CorePageDecorator/input-table.css
-CorePageDecorator/input-table-large.css
-CorePageDecorator/input-table-small.css
-
-CorePageDecorator/button.css
-
-CorePageDecorator/icons-small.css
-CorePageDecorator/icons-medium.css
+CorePageDecorator/3-module/overview-table.css
+CorePageDecorator/3-module/overview-table-content-types.css
+CorePageDecorator/3-module/overview-table-large.css
+CorePageDecorator/3-module/overview-table-large-content-types.css
+CorePageDecorator/3-module/overview-table-large-filter.css
+CorePageDecorator/3-module/overview-table-large-sort.css
+CorePageDecorator/3-module/overview-table-small.css
+CorePageDecorator/3-module/overview-table-small-content-types.css
+CorePageDecorator/3-module/overview-table-small-filter.css
