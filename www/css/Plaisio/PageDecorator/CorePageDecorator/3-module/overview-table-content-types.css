@@ -1,12 +1,4 @@
-.ot-currency,
-.ot-date,
-.ot-datetime,
-.ot-email,
-.ot-icon,
-.ot-ipv4,
-.ot-link,
-.ot-number,
-.ot-text
+.ot-cell
 {
   padding:        5px;
   vertical-align: middle;
@@ -22,12 +14,12 @@
 .ot-currency,
 .ot-number
 {
-  font-family:    "Courier New", Courier, monospace;
-  text-align:     right;
-  vertical-align: middle;
+  text-align:           right;
+  vertical-align:       middle;
+  font-variant-numeric: proportional-nums;
 }
 
-.ot-currency:before
+.ot-currency:not(:empty):before
 {
   float:         left;
   padding-right: 4px;
@@ -37,7 +29,7 @@
 .ot-date,
 .ot-datetime
 {
-  font-family:    "Courier New", Courier, monospace;
-  text-align:     center;
-  vertical-align: middle;
+  text-align:           center;
+  vertical-align:       middle;
+  font-variant-numeric: proportional-nums;
 }

@@ -15,19 +15,19 @@
   background-color: #d3dcee;
 }
 
-td.dt:not(.dt-table-menu)
+.dt-cell
 {
   padding:          5px;
   vertical-align:   middle;
-  background-color: #dddddd;
+  background-color: #eeeeee;
 }
 
-.dt-row:hover > td
+.dt-row:hover > .dt-cell
 {
   background-color: #b7f9b7;
 }
 
-.dt-row:hover > th
+.dt-row:hover > .dt-header
 {
   color:            #333333;
   background-color: #b7f9b7;
