@@ -1,6 +1,7 @@
 .l-content
 {
   display:        inline-flex;
+  align-items:    flex-start;
   flex-direction: row;
   flex-wrap:      wrap;
   margin-top:     4px;
