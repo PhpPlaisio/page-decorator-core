@@ -1,31 +1,31 @@
 @media only screen and (max-width: 40em)
 {
-  table.ot
+  .ot-table
   {
     width: 100%;
   }
 
   /* Force table to not be like tables anymore */
-  table.ot,
-  thead.ot,
-  tbody.ot,
-  .ot-filter-row > td,
+  .ot-table,
+  .ot-thead,
+  .ot-tbody,
   .ot-filter-row,
+  .ot-filter,
   .ot-header,
-  .ot-row > td,
-  .ot-row
+  .ot-row,
+  .ot-cell
   {
     display: block;
-  }
-
-  .ot-row > td
-  {
-    min-height: 12px;
   }
 
   .ot-row
   {
     margin-bottom: 0.5em;
+  }
+
+  .ot-cell
+  {
+    min-height: 12px;
   }
 
   /* Hide table headers (but not display: none;, for accessibility) */
@@ -36,8 +36,8 @@
     left:     -9999px;
   }
 
-  .ot-row > td,
-  .ot-filter-row > td
+  .ot-cell,
+  .ot-filter
   {
     position:      relative;
     padding-left:  35vw;
@@ -46,8 +46,8 @@
     border-bottom: 1px solid white;
   }
 
-  .ot-row > td:before,
-  .ot-filter-row > td:before
+  .ot-cell:before,
+  .ot-filter:before
   {
     font-family:      Arial, Helvetica, sans-serif;
     font-weight:      bold;
@@ -62,7 +62,7 @@
     background-color: #d3dcee;
   }
 
-  .ot-filter
+  .ot-filter-row
   {
     padding-top:      0;
     padding-right:    0;

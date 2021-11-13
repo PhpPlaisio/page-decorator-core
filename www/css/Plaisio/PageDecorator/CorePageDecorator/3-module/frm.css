@@ -1,3 +1,8 @@
+.frm-form
+{
+  display: block;
+}
+
 /* ------------------------------------------------------------------------------------------------------------------ */
 /*                                                                                                                    */
 /*                                                  input types                                                       */
@@ -59,7 +64,6 @@
   text-align: right;
 }
 
-
 .frm-checkboxes,
 .frm-radios
 {
@@ -111,19 +115,6 @@ label.it.is-mandatory:after
 label.is-error
 {
   color: red;
-}
-
-.it-errors
-{
-  display:        flex;
-  flex-direction: column;
-  margin:         4px 0;
-  color:          red;
-}
-
-.it-error
-{
-  line-height: 120%;
 }
 
 .frm-date.is-error,

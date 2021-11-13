@@ -10,5 +10,10 @@
             <include name="**/*"/>
         </fileset>
     </asset>
+    <asset type="images">
+        <fileset dir="www/images">
+            <include name="**/*"/>
+        </fileset>
+    </asset>
     <root>www</root>
 </assets>

@@ -1,23 +1,18 @@
 @media all and (min-width: 40em)
 {
   /* ---------------------------------------------------------------------------------------------------------------- */
-  form.it,
-  fieldset.it
-  {
-    width:   auto;
-    padding: 0;
-    border:  none;
-  }
-
-  fieldset.it
+  .it-fieldset-visible
   {
     display:     block;
+    width:       auto;
+    padding:     0;
     white-space: nowrap;
+    border:      none;
   }
 
-  table.it
+  .it-table
   {
-    margin:          -2px -2px;
+    margin:          2px -2px;
     empty-cells:     show;
     border-spacing:  2px;
     border-collapse: separate;
@@ -33,7 +28,7 @@
     background-color: #d3dcee;
   }
 
-  .it-input
+  .it-cell
   {
     padding:          0 2px;
     vertical-align:   middle;
@@ -45,22 +40,12 @@
   /*                                                  Style for buttons                                               */
   /*                                                                                                                  */
   /* ---------------------------------------------------------------------------------------------------------------- */
-  div.it-button
+  .it-button-cell-wrapper
   {
     display:         flex;
     flex-direction:  row;
     justify-content: space-evenly;
     padding:         8px 0;
-  }
-
-  td.it-button
-  {
-    background: transparent none;
-  }
-
-  .btn-link
-  {
-    text-transform: lowercase;
   }
 
   /* ---------------------------------------------------------------------------------------------------------------- */

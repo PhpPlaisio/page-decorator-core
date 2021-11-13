@@ -6,11 +6,7 @@
 #
 # ----------------------------------------------------------------------------------------------------------------------
 CorePageDecorator/1-base/reset.css
-
-CorePageDecorator/style.css
-
-CorePageDecorator/icons-small.css
-CorePageDecorator/icons-medium.css
+CorePageDecorator/1-base/body.css
 
 # ----------------------------------------------------------------------------------------------------------------------
 #
@@ -38,15 +34,22 @@ CorePageDecorator/3-module/button.css
 CorePageDecorator/3-module/dt.css
 CorePageDecorator/3-module/frm.css
 
-CorePageDecorator/3-module/input-table-large.css
-CorePageDecorator/3-module/input-table-small.css
+CorePageDecorator/3-module/icons-small.css
+CorePageDecorator/3-module/icons-medium.css
 
-CorePageDecorator/3-module/overview-table.css
-CorePageDecorator/3-module/overview-table-content-types.css
-CorePageDecorator/3-module/overview-table-large.css
-CorePageDecorator/3-module/overview-table-large-content-types.css
-CorePageDecorator/3-module/overview-table-large-filter.css
-CorePageDecorator/3-module/overview-table-large-sort.css
-CorePageDecorator/3-module/overview-table-small.css
-CorePageDecorator/3-module/overview-table-small-content-types.css
-CorePageDecorator/3-module/overview-table-small-filter.css
+CorePageDecorator/3-module/it.css
+CorePageDecorator/3-module/it-large.css
+CorePageDecorator/3-module/it-small.css
+
+CorePageDecorator/3-module/link.css
+CorePageDecorator/3-module/nowrap.css
+
+CorePageDecorator/3-module/ot.css
+CorePageDecorator/3-module/ot-content-types.css
+CorePageDecorator/3-module/ot-large.css
+CorePageDecorator/3-module/ot-large-content-types.css
+CorePageDecorator/3-module/ot-large-filter.css
+CorePageDecorator/3-module/ot-large-sort.css
+CorePageDecorator/3-module/ot-small.css
+CorePageDecorator/3-module/ot-small-content-types.css
+CorePageDecorator/3-module/ot-small-filter.css

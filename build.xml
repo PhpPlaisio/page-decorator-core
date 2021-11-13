@@ -1,6 +1,7 @@
 <project name="PhpPlaisio: Core Menu" default="build" basedir=".">
-    <taskdef name="Sprite" classname="vendor.plaisio.phing-extensions.src.SpriteTask"/>
-    <!-- Run composer update and executes various other updates -->
+    <taskdef name="Sprite" classname="\Plaisio\Phing\Task\SpriteTask"/>
+
+    <!-- Update packages -->
     <target name="update">
         <exec executable="composer" checkreturn="true" passthru="true">
             <arg value="--ansi"/>
@@ -10,16 +11,41 @@
             <arg value="--ansi"/>
             <arg value="update"/>
         </exec>
+
+        <phing phingfile="build.xml" target="assets" haltonfailure="true"/>
+        <phing phingfile="build.xml" target="code-generation" haltonfailure="true"/>
+        <phing phingfile="build.xml" target="kernel" haltonfailure="true"/>
+        <phing phingfile="build.xml" target="sprite" haltonfailure="true"/>
+        <phing phingfile="build.xml" target="outdated" haltonfailure="true"/>
+    </target>
+
+    <!-- Install packages -->
+    <target name="update">
+        <exec executable="composer" checkreturn="true" passthru="true">
+            <arg value="--ansi"/>
+            <arg value="install"/>
+        </exec>
+        <exec executable="npm" checkreturn="false" passthru="true">
+            <arg value="--ansi"/>
+            <arg value="install"/>
+        </exec>
+
+        <phing phingfile="build.xml" target="assets" haltonfailure="true"/>
+        <phing phingfile="build.xml" target="code-generation" haltonfailure="true"/>
+        <phing phingfile="build.xml" target="kernel" haltonfailure="true"/>
+        <phing phingfile="build.xml" target="sprite" haltonfailure="true"/>
+        <phing phingfile="build.xml" target="outdated" haltonfailure="true"/>
+    </target>
+
+    <target name="assets">
         <exec executable="bin/plaisio" checkreturn="true" passthru="true">
             <arg value="--ansi"/>
             <arg value="plaisio:assets"/>
         </exec>
+    </target>
 
-        <phing phingfile="build.xml" target="code-generation" haltonfailure="true"/>
-        <phing phingfile="build.xml" target="kernel" haltonfailure="true"/>
-        <phing phingfile="build.xml" target="sprite" haltonfailure="true"/>
-
-        <!-- Show outdated packages -->
+    <!-- Show outdated packages -->
+    <target name="outdated">
         <exec executable="composer" checkreturn="true" passthru="true">
             <arg value="--ansi"/>
             <arg value="outdated"/>
@@ -48,19 +74,19 @@
 
     <target name="sprite">
         <Sprite cssBaseClass="icons-small"
-                cssFilename="css/Plaisio/PageDecorator/CorePageDecorator/icons-small.css"
-                spriteFilename="www/css/Plaisio/PageDecorator/CorePageDecorator/images/icons-small.png"
+                cssFilename="css/Plaisio/PageDecorator/CorePageDecorator/3-module/icons-small.css"
+                spriteFilename="www/css/Plaisio/PageDecorator/CorePageDecorator/3-module/images/icons-small.png"
                 resourceRoot="www">
-            <fileset dir="www/css/Plaisio/PageDecorator/CorePageDecorator/images/12x12/">
+            <fileset dir="www/images/12x12/">
                 <include name="**/*.png"/>
             </fileset>
         </Sprite>
 
         <Sprite cssBaseClass="icons-medium"
-                cssFilename="css/Plaisio/PageDecorator/CorePageDecorator/icons-medium.css"
-                spriteFilename="www/css/Plaisio/PageDecorator/CorePageDecorator/images/icons-medium.png"
+                cssFilename="css/Plaisio/PageDecorator/CorePageDecorator/3-module/icons-medium.css"
+                spriteFilename="www/css/Plaisio/PageDecorator/CorePageDecorator/3-module/images/icons-medium.png"
                 resourceRoot="www">
-            <fileset dir="www/css/Plaisio/PageDecorator/CorePageDecorator/images/16x16/">
+            <fileset dir="www/images/16x16/">
                 <include name="**/*.png"/>
             </fileset>
         </Sprite>
