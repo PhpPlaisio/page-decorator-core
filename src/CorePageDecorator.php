@@ -37,28 +37,6 @@ class CorePageDecorator extends PlaisioObject implements PageDecorator
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
-   * Echos the main menu.
-   */
-  private function echoAdminMenu(): void
-  {
-    echo '<div class="grid-admin-menu">';
-
-    echo '<div class="admin-menu-icon">';
-    echo '<div class="menu-bar1"></div>';
-    echo '<div class="menu-bar2"></div>';
-    echo '<div class="menu-bar3"></div>';
-    echo '</div>';
-
-    echo '<div class="admin-menu-logo">';
-    echo '<a href="/"></a>';
-    echo '</div>';
-
-    echo $this->nub->menu->menu(C::MNU_ID_ADMIN);
-    echo '</div>';
-  }
-
-  //--------------------------------------------------------------------------------------------------------------------
-  /**
    * @inheritDoc
    */
   public function decorate(string $content): Response
@@ -84,10 +62,10 @@ class CorePageDecorator extends PlaisioObject implements PageDecorator
   protected function echoPageLeader(): void
   {
     echo '<!DOCTYPE html>';
-    echo Html::generateTag('html',
-                           ['xmlns'    => 'http://www.w3.org/1999/xhtml',
-                            'xml:lang' => $this->nub->babel->getLang(),
-                            'lang'     => $this->nub->babel->getLang()]);
+    echo str_replace('/>', '>', Html::htmlNested(['tag'  => 'html',
+                                                  'attr' => ['xmlns'    => 'http://www.w3.org/1999/xhtml',
+                                                             'xml:lang' => $this->nub->babel->getLang(),
+                                                             'lang'     => $this->nub->babel->getLang()]]));
     echo '<head>';
 
     $this->nub->assets->echoMetaTags();
@@ -107,6 +85,28 @@ class CorePageDecorator extends PlaisioObject implements PageDecorator
     $this->nub->assets->echoJavaScript();
 
     echo '</body></html>';
+  }
+
+  //--------------------------------------------------------------------------------------------------------------------
+  /**
+   * Echos the main menu.
+   */
+  private function echoAdminMenu(): void
+  {
+    echo '<div class="grid-admin-menu">';
+
+    echo '<div class="admin-menu-icon">';
+    echo '<div class="menu-bar1"></div>';
+    echo '<div class="menu-bar2"></div>';
+    echo '<div class="menu-bar3"></div>';
+    echo '</div>';
+
+    echo '<div class="admin-menu-logo">';
+    echo '<a href="/"></a>';
+    echo '</div>';
+
+    echo $this->nub->menu->menu(C::MNU_ID_ADMIN);
+    echo '</div>';
   }
 
   //--------------------------------------------------------------------------------------------------------------------
